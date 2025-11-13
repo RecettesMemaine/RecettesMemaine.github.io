@@ -1,4 +1,4 @@
-<script>
+
 const openModalBtn = document.getElementById('openModalBtn');
 const modal = document.getElementById('myModal');
 const closeBtn = document.querySelector('.close');
@@ -16,4 +16,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
-</script>
+
