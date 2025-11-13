@@ -1,19 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
   const openModalBtn = document.getElementById('openModalBtn');
-  const modal = document.getElementById('myModal');
-  const closeBtn = document.querySelector('.close');
+  const modal = document.querySelectorAll('.modal');
+  const closeBtn = document.querySelectorAll('.close');
 
-  openModalBtn.onclick = function() {
-    modal.style.display = "block";
-  };
+  openModalBtns.forEach((btn, i) => {
+    btn.onclick = function() {
+      modals[i].style.display = "block";
+    };
+  });
 
-  closeBtn.onclick = function() {
-    modal.style.display = "none";
-  };
+  closeBtns.forEach((btn, i) => {
+    btn.onclick = function() {
+      modals[i].style.display = "none";
+    };
+  });
 
   window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+    modals.forEach((modal) => {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    });
   };
+  
 });
