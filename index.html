@@ -8,15 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <!-- Add any CSS styles or external stylesheets here -->
     <link rel="stylesheet" href="styles.css">
-   
-    <!-- style type="text/css">
-        body {
-            font-family: 'Architects Daughter', sans-serif;
-        }
-        h1, h2, h3 {
-            font-family: 'Architects Daughter', sans-serif;
-        }   
-   </style -->
+    <script src="scripts.js"></script>
     
 </head>
 <body>
@@ -71,6 +63,17 @@
                     <li>Laisser mijoter à feu doux environ 1h30</li>
                     <li>Dans un bol mettre le lait évaporé, un jaune d’oeuf et du jus de citron et rajouter à la viande à la dernière minute</li>
                 </ul>
+                <!-- Trigger/Button -->
+                <button id="openModalBtn">Voir la vraie recette</button>
+
+                <!-- Modal Structure -->
+                <div id="myModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="your-image-path.jpg" alt="Recette authentique" style="max-width:100%">
+                  </div>
+                </div>
+            
                 </br>
                 <hr>
                 <h2 id="Mousse">Mousse au Chocolat</h2>
@@ -176,6 +179,6 @@
     <footer>
         <p>&copy; 2025 Recettes Memaine</p>
     </footer>
-    <!-- Add any JavaScript scripts here -->
+
 </body>
 </html>
